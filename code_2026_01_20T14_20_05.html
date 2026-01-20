@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Finder - Find Your Perfect Style</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fashion Finder</h1>
+            <p class="tagline">Discover your perfect style across top retailers</p>
+        </header>
+
+        <div class="search-section">
+            <h2>What are you looking for?</h2>
+            <form id="searchForm">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="e.g., women's black work trousers, men's casual shirt, summer dress..."
+                    required
+                >
+                <button type="submit">Find Fashion</button>
+            </form>
+        </div>
+
+        <div id="resultsSection" class="results-section hidden">
+            <h2>Your Fashion Matches</h2>
+            <p class="search-query">Showing results for: <span id="displayQuery"></span></p>
+            <div id="resultsGrid" class="results-grid"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
